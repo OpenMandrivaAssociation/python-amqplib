@@ -32,3 +32,15 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
 %files -f FILE_LIST
 %defattr(-,root,root)
 %doc README
+
+
+%changelog
+* Fri Aug 05 2011 Lev Givon <lev@mandriva.org> 1.0.0-1mdv2012.0
++ Revision: 693343
+- Update to 1.0.0.
+
+* Sun Nov 07 2010 Lev Givon <lev@mandriva.org> 0.6.1-1mdv2011.0
++ Revision: 594848
+- import python-amqplib
+
+
