@@ -5,13 +5,12 @@
 
 Summary:	Python AMQP (Advanced Message Queuing Protocol) client library
 Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Source0:	%{module}-%{version}.tgz
+Version:	1.0.2
+Release:	1
+Source0:	https://pypi.python.org/packages/source/a/amqplib/amqplib-%{version}.tgz
 License:	LGPLv2.1
 Group:		Development/Python
 Url:		http://code.google.com/p/py-amqplib/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	python-devel
 
@@ -23,14 +22,11 @@ amqplib is a Python client library that supports the 0-8 AMQP
 %setup -q -n %{module}-%{version}
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %clean
-%__rm -rf %{buildroot}
 
 %files -f FILE_LIST
-%defattr(-,root,root)
 %doc README
 
 
@@ -42,5 +38,6 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
 * Sun Nov 07 2010 Lev Givon <lev@mandriva.org> 0.6.1-1mdv2011.0
 + Revision: 594848
 - import python-amqplib
+
 
 

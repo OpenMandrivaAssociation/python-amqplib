@@ -1,2 +1,4 @@
+removed_sources:
+  amqplib-1.0.0.tgz: ae59e5cdaf1b03296906508818257fe596e23e04
 sources:
-  "amqplib-1.0.0.tgz": ae59e5cdaf1b03296906508818257fe596e23e04
+  amqplib-1.0.2.tgz: ef4379ecb982669e22f6aae06123a73ef3d1293a
