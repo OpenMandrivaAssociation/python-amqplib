@@ -7,7 +7,7 @@ Release:    4
 Source0:    https://pypi.python.org/packages/source/a/amqplib/amqplib-%{version}.tgz
 License:    LGPLv2.1
 Group:      Development/Python
-Url:        http://code.google.com/p/py-amqplib/
+Url:        https://code.google.com/p/py-amqplib/
 BuildArch:  noarch
 BuildRequires:  python-devel
 BuildRequires:  python-nose
